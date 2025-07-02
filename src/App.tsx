@@ -1,7 +1,15 @@
+import { Routes, Route } from "react-router-dom";
+import { Home } from "./pages/Home";
+import { Post } from "./pages/Post";
+import { DefaultLayout } from "./layouts/DefaultLayout";
 
-export function App() {
+export default function App() {
   return (
-    <h1>Hello world</h1>
-  )
+    <Routes>
+      <Route path="/" element={<DefaultLayout />}>
+        <Route index element={<Home />} />
+        <Route path="post/:id" element={<Post />} />
+      </Route>
+    </Routes>
+  );
 }
-
