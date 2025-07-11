@@ -5,7 +5,9 @@ export function DefaultLayout() {
   return (
     <>
       <HeaderContainer>
-        <h1 style={{ color: "#fff" }}>GitHub Blog</h1>
+        <img src="/src/assets/LeftEffect.png" />
+        <div>Teste</div>
+        <img src="/src/assets/RightEffect.png" />
       </HeaderContainer>
       <Outlet />
     </>

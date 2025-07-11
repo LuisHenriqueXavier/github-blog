@@ -10,7 +10,7 @@ export const ProfileCard = styled.section`
   background: ${(props) => props.theme.baseProfile};
   padding: 2rem;
   border-radius: 10px;
-  margin-top: -5.5rem;
+  margin-top: -6rem;
   display: flex;
   gap: 2rem;
 
