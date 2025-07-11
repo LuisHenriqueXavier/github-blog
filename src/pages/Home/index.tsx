@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { api } from "../../lib/axios";
 import { PostCard } from "../../components/PostCard";
 import { Container, ProfileCard, SearchForm, PostList } from "./styles";
+import { Buildings, GithubLogo, Users } from "phosphor-react";
 
 interface User {
   avatar_url: string;
@@ -76,9 +77,18 @@ export function Home() {
           </header>
           <p>{user.bio}</p>
           <ul>
-            <li>{user.company || "Sem empresa"}</li>
-            <li>{user.login}</li>
-            <li>{user.followers} seguidores</li>
+            <li>
+              <GithubLogo size={18} weight="fill" />
+              {user.login}
+            </li>
+            <li>
+              <Buildings size={18} weight="fill" />
+              {user.company || "Sem empresa"}
+            </li>
+            <li>
+              <Users size={18} weight="fill" />
+              {user.followers} seguidores
+            </li>
           </ul>
         </div>
       </ProfileCard>

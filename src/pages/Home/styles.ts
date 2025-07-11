@@ -51,8 +51,8 @@ export const ProfileCard = styled.section`
   ul {
     display: flex;
     flex-wrap: wrap;
-    gap: 1.5rem;
-    margin-top: 1.5rem;
+    gap: 5rem;
+    margin-top: 6rem;
     color: ${(props) => props.theme.baseTitle};
 
     li {
@@ -60,6 +60,10 @@ export const ProfileCard = styled.section`
       display: flex;
       align-items: center;
       gap: 0.5rem;
+
+      svg {
+        color: ${(props) => props.theme.baseLabel};
+      }
     }
   }
 
